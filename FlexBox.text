@@ -1,0 +1,81 @@
+CSS FLEXBOX:
+-------------
+
+=> Flexible Box
+
+=> One dimension -Row or Column 
+
+=> Browser Support --- www.caniuse.Column
+
+=> Browser Prefixes --- Autoprefixes
+
+
+Naming conventions
+=====================
+
+1) Parent container => it is parent of children if we want apply flex property to children we need to give flex property here 
+
+display : flex ==>this block level mostly we used this one 
+
+display : inline-flex => this inline level
+
+2) Children
+ we can give individual children if required 
+
+
+ Flex Direction 
+ ===============
+
+ It is used to align the element line by line or side by side
+
+flex-direction : row => it is by default coming side by side
+flex-direction : row-reverse => side by side reverse
+flex-direction : column => line by line 
+flex-direction : column-reverse => line by line reverse
+
+Flex-wrap:
+=========
+
+it is used to align elements responsive means if content size is more than container children will go out side container this will cause UI Response drawback
+
+flex-wrap:nowrap => by default it not applying wrap
+flex-wrap:wrap => it will wrap content inside parent div
+flex-wrap: wrap-reverse => it will wrap content inside parent div reversely
+
+justify-content:
+==================
+
+It is used to horizantal elemtns alignments like center , start , end space around even 
+
+justify-content: flex-start => by defalut coming aligned start
+justify-content : flex-end  => place at end postion 
+
+justify-content: center => place at center 
+
+give space between items bellow properties
+
+justify-content : space-between => first items and last items will placed and gap between each element 
+
+justify-content : space-evenly
+
+justify-content : space-around 
+
+
+align-items:
+============
+
+It is used to align vertical elements in flex container
+
+
+align-items : stretch (default) => it stretch items vertically in complete container
+
+align-items : flex-start => it placed from upper side
+
+align-items : flex-end => placed at bottom side 
+
+align-items : center => placed center
+
+align-items : baseline => it placed all items content on equal line , if one element has different content means large hight then it keeps remaining items will be equal line from upper side mainly used at navbar like logo size bigger than other content then it keep same line all items 
+
+
+

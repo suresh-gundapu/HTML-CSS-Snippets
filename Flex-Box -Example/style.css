@@ -1,0 +1,33 @@
+*{
+  margin: opx;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header{
+  width: 90;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('neom-tuEtpjghVmg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header h1{
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0px 3px 7px grey;
+}
+.banner{
+  width: 90vw;
+  min-height: 100vh;
+  background:  url('neom-tuEtpjghVmg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}

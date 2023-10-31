@@ -1,0 +1,13 @@
+VS Code Extentions:
+====================
+
+
+1) Meterial Theme and Meterial Icon => settings > change color Theme 
+
+2) Auto Rename Tag : if we give open tag it will take closed tag automatically 
+
+3) Live server : open file with live server , when we change anything in code the output will effect without page refresh
+
+4) CSS Peek : it is used to know class properties when ctl+click and hover the class
+
+5) Prettier : it is used to set code intendentions when we do save file settings > auto save enable
