@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc()</title>
+    <style>
+      /*
+      calc() == it is used to math operations like + - * mix match value for example here i take header and banner, suppose i take header heigt is 200 px and banner min height 100vh now 
+      it give scroll bar in these case i want dont show scroll bar fit height of page in document , so now use calc method now 100vh - 200px then it will give 100vh will fit in screen 
+      dont forgot space between operators start and end   
+      */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 200px;
+        background-color: aqua;
+      }
+      .banner {
+        min-height: calc(100vh - 250px);
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>calc() - it perform math operations</h1>
+    <div class="header"></div>
+    <div class="banner"></div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last rule , specificity , universal selector</title>
+    <style>
+      /*Last rule example if give color to h1 tag and again give another color to h1 tag  we can say precedence of css rule also css will apply top to bottom approach */
+
+      h1 {
+        color: red;
+      }
+      h1 {
+        color: rgb(80, 37, 8);
+      }
+      /* specificity  :  which has more specificity then apply style to them, here we apply color to class it overrides the h1 css color because when we mouse over the
+      selector we can see specificity of element h1 has (0,0,1) class has (0,1,0) same as apply css to id it overrides because id has more specificity (1,0,0) 
+      specificity ==> id > class > tag
+      */
+
+      .class_one {
+        color: green;
+      }
+      #id_one {
+        color: gold;
+      }
+
+      /* Universal selector : it can apply css to all elements of document but it has less specificity */
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Last rule , specificity , universal selector</h1>
+
+    <h1>Div1</h1>
+    <h1 id="id_one">Div2</h1>
+    <h1 class="class_one">Div3</h1>
+  </body>
+</html>

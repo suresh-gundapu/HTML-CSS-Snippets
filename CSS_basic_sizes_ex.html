@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixels, percentage , em , rem , vw , vh</title>
+    <style>
+      /* pixels is nothing but it visualize the dot 
+      these are not relative means it not depend to others*/
+      .heading {
+        font-size: 40px;
+      }
+      /* Percentage - Relatives : percentage  is always  depends on their relatives means their parent element has 100 percentage width if we give fifty percentage to child it will take in 100 percentage width of 50 percentage
+      for example if give two div's outer is parent and inner is child first if you apply width height color to inner div without apply css to outer div it wont apply because inner 
+      div depends on outer div because outer div is parent of inner div
+      if parent div has percentage size it wont apply
+      */
+      .inner {
+        height: 50%;
+        width: 50%;
+        background-color: red;
+      }
+      .outer {
+        height: 300px;
+        width: 500px;
+        background-color: green;
+      }
+      /*
+      em = It is relative means it depends on parent always
+      1em  = 16px default browser style
+      1em  = base value
+      
+      Here i am taking two h3 elements  first  class is relative and second is absolute
+
+      */
+      .em-ex {
+        font-size: 20px;
+      }
+      .relative {
+        font-size: 2em; /* parent div has 20px = 2*20 = 40px */
+      }
+      .absolute {
+        font-size: 1em; /* it have body parent , default font size is 16 px so 1 em is 16 px  */
+      }
+
+      /* rem is the RELATIVE of the root 
+      1rem = 16px of default browser style 
+      it will take refernce of root element only 
+      root element is <html> so in real time mostly we use this one 
+      */
+
+      /*
+      vh = height = percentage of screen
+      vw = width  = percentage of screen
+
+      vhight and vwidth are taking value depends on screen width and hight percentage if give 100vh it will take 100% of height depends on screen if give 50vw it will take
+      50 % of width of 100 % of main screen  it is useful for responsiveness
+    
+      */
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center" class="heading">
+      Pixels, percentage , em , rem, vw , vh
+    </h1>
+    <h2>Percentage EX</h2>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+    <h2>Em Example</h2>
+    <hr />
+    <div class="em-ex">
+      <h3 class="relative">Relative</h3>
+    </div>
+    <h3 class="absolute">Absolute</h3>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+Priority for internal , external and inline CSS
+===============================================
+Priority =>> inline  css > internal css > external css
+
+Selectors:
+=========
+1) element Selectors
+2) Group Selectors
+3) class Selectors
+4) id Selectors
+
+CSS Inheritance :
+================
+It is nothing but if give styles to parent element it apply to all child elements 
+
+
+VS code color picker:
+===================
+
+CTRL+space
+ and hover that color then we can get color picker 
+
