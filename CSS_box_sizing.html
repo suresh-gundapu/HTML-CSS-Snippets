@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing property</title>
+    <style>
+      /*
+      box sizing is very important property to overcome padding margin issues for elements , some times when we applying padding margin to the elements it will take extra padding margin for that 
+      due to that it will increase width and override the besides elements to over come this we should use box-sizing:border-box 
+      so we can easily apply to universal selector it will give to all elements automatically so no need to give separably 
+      here div1 before we apply 20px padding but height and width takes 200+20+20 = 240px takes width and height 
+      after applying box-sizing it takes 140+20+20=200px 
+      */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        color: white;
+        font-size: 2rem;
+      }
+      .box-1 {
+        background-color: aqua;
+        padding: 20px;
+        /* box-sizing: border-box; */
+      }
+      .box-2 {
+        background-color: blue;
+      }
+      .box-3 {
+        background-color: blueviolet;
+        padding: 30px;
+        /* box-sizing: border-box; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Box Sizing property</h1>
+
+    <div class="box box-1">iam box sizing</div>
+    <div class="box box-2">iam normal</div>
+    <div class="box box-3">iam without box size</div>
+  </body>
+</html>

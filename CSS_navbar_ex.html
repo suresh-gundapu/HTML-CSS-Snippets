@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      /*
+      descending selectors means parent and  their children selectors here ul li a is descending selectors 
+      here a tag text is inline so we cant apply margin left and right so we convert inline to block and after applied the margin 
+
+      here one more point is there without convert inline elements to block elements we can give display : inline-block it keep inline element as well as and we can apply margin
+      left and right now 
+      */
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      ul li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        line-height: 1rem;
+        background-color: black;
+        color: white;
+        padding: 10px 10px;
+        /* display: block; */
+        display: inline-block;
+        float: left;
+        margin: 1px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </body>
+</html>

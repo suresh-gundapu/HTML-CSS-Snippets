@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      /*
+    Responsive design 
+    It styles a element different screen sizes 
+
+    min-width : starting from 
+    max width: upto 
+    mobile first
+    Syntax : @media screen and (min-width:768px){
+
+      properties :values
+    }
+    */
+
+      body {
+        background-color: aquamarine;
+      }
+      .banner {
+        background-color: blue;
+      }
+      h1 {
+        color: white;
+        text-decoration: underline;
+        text-transform: capitalize;
+        padding: 10px;
+        text-align: center;
+      }
+      @media screen and (min-width: 576px) {
+        body {
+          background-color: blueviolet;
+        }
+        .banner {
+          background-color: brown;
+        }
+        h1 {
+          color: white;
+          text-decoration: underline;
+          text-transform: capitalize;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Iam media queries welcome to hidden brains info tech</h1>
+    </div>
+  </body>
+</html>

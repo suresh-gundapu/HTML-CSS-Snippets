@@ -13,10 +13,74 @@ CSS Inheritance :
 ================
 It is nothing but if give styles to parent element it apply to all child elements 
 
-
 VS code color picker:
 ===================
-
 CTRL+space
  and hover that color then we can get color picker 
+
+Typography :
+===========
+font-family: =>>>>> font-stack   
+font-stack, generic family ==>>>>>>> if font family not Support to Browser then generic family take that sanserif family etc..
+google fonts : ======> got fonts.google.com> select font styles and add > generate link >paste in html file and use that font family
+
+Display:inline and block:
+========================
+block: it starts always new line and takes 100 % width
+inline: it doesn't starts new line width takes up as per content
+
+
+How to set horizontal center display inline and block level elements?
+====================================================================
+for inline elements give text-align:center
+block level elements already takes full width but when we give particular width we can see align left side so we have to set center that use margin property 
+
+give margin left and right auto 
+
+short cut: 
+margin : top-bottom  left-right 
+
+margin : 20px auto 
+
+inline : top and bottom not respected
+block : top and bottom respected
+
+Linear-gradient:
+================
+
+it is a collection of different color we can apply different ways
+
+color:Linear-gradient(green,red);
+
+Linear-gradient(position, green,red);
+
+position==> to top , to bottom , 150deg etc,..,
+
+
+if apply background images to this one 
+
+background:linear-gradient(green, url(''));
+
+float :
+=======
+it is used to display elements as side by side 
+
+clear :
+========
+
+it cancel the float property
+clear:both => it can cancel float:left and right 
+
+positions:
+
+==========
+
+the default position is static 
+
+position absolute vs relative:
+
+the position relative is depends on besides element it wil take top and right distance so it is taking it's besides elements
+
+the absolute is taking distance from his root parent element html so it will cross the besides elements to over come this we can give position relative to its parent element
+then it will take distance from their parent div 
 
