@@ -1,27 +1,17 @@
-CSS FLEXBOX:
--------------
-
+CSS FLEX-BOX:
+------------
 => Flexible Box
-
 => One dimension -Row or Column 
-
 => Browser Support --- www.caniuse.Column
-
 => Browser Prefixes --- Autoprefixes
 
-
 Naming conventions
-=====================
-
+==================
 1) Parent container => it is parent of children if we want apply flex property to children we need to give flex property here 
-
 display : flex ==>this block level mostly we used this one 
-
 display : inline-flex => this inline level
-
 2) Children
  we can give individual children if required 
-
 
  Flex Direction 
  ===============
@@ -45,10 +35,10 @@ flex-wrap: wrap-reverse => it will wrap content inside parent div reversely
 justify-content:
 ==================
 
-It is used to horizantal elemtns alignments like center , start , end space around even 
+It is used to horizontal elements alignments like center , start , end space around even 
 
-justify-content: flex-start => by defalut coming aligned start
-justify-content : flex-end  => place at end postion 
+justify-content: flex-start => by default coming aligned start
+justify-content : flex-end  => place at end position 
 
 justify-content: center => place at center 
 
@@ -76,6 +66,96 @@ align-items : flex-end => placed at bottom side
 align-items : center => placed center
 
 align-items : baseline => it placed all items content on equal line , if one element has different content means large hight then it keeps remaining items will be equal line from upper side mainly used at navbar like logo size bigger than other content then it keep same line all items 
+
+
+align-content:
+==============
+
+it is used to align content vertical when more content
+stretch(default) , flex-start,flex-end,center, space-around, space-between
+
+
+Main axis and Cross axis :
+==========================
+
+flex=> row 
+
+main axis => left to right 
+
+cross axis => top to bottom
+
+flex=> column
+
+main axis => top to bottom 
+
+cross axis => left to bottom 
+
+
+flex - row => so when we justify content horizontally in  , align items vertically 
+flex - column  => so when we justify content  vertically in  , align items horizontally
+
+because of their main axis and cross axis 
+
+Order property:
+===============
+
+This is used to change order of children in flex element without touch the html content
+
+by default order of every children is 0
+
+this is same for both row and column 
+
+higher order will go last lesser order will come start
+
+align-self:
+==========
+this is only for children for change their alignment 
+
+for parent we are using align-items same like for individual child we can place anywhere by using this property
+align-self:  flex-start, flex-end, center 
+
+flex-grow:
+==========
+
+this is also only for children
+
+this is very important property in bootstrap we are using grid system for responsive align the children means remove spaces end or start 
+
+for individual children also we can give 
+
+by default it has 0 if we give higher number it will take more space 
+
+flex-grow:1
+
+flex-shrink:
+=============
+this is also only for children
+
+by default it has flex-shrink: 1
+
+it is used to increase children width main use it the width will no change in all devices 
+
+
+flex-basis:
+===========
+
+this is also only for children
+ it is used to give width in pixels to Children
+
+ flex-basis:150px 
+
+ it is also adjust width in each devices 
+
+ flex shortcut
+ ============
+
+ flex: flex-grow flex-shrink flex-basis
+
+ it is used for n-column layouts 
+
+4- column layout creation :
+
+flex: 0 0 calc(25%-1rem);
 
 
 

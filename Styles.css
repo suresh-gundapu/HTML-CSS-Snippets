@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f3f3f3;
@@ -15,15 +18,26 @@ h1{
   text-align: center;
   font-size: 35px;
   color: rgb(17, 2, 2);
+  /* flex-grow:1 ; */
 
+}
+.box1{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(17, 2, 2);
+  flex:0 0 calc(25% - 1rem);
 }
 
 .box-1{
   background: blue;
-  font-size: 60px;
+  /* font-size: 60px; */
+  /* order: 1; */
+  /* flex-grow: 1; */
 }
 .box-2{
   background: greenyellow;
+  /* align-self: flex-start; */
 }
 .box-3{
   background: orangered;
@@ -33,4 +47,5 @@ h1{
 }
 .box-5{
   background: gold;
+  /* order: -10; */
 }

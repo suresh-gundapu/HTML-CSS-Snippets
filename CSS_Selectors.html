@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+
+    <style>
+      /*
+    1) Basic selectors : id, class, group , element
+    2) Pseudo element selectors => ::after , ::before , ::first-letter , ::first-line
+    3) Pseudo class selectors => :hover, :link,:active,:visited
+
+    => Descendent and child combinators 
+
+    here we learn descendent selectors and direct child selectors 
+
+    if we give all div and child selectors it apply styles to their children this is descendant if u want apply parent of direct child that is indicate > symbol
+    */
+      /* div ul li h1 {
+        color: aqua;
+      } */
+      div h1 {
+        color: blue;
+      }
+      div > h1 {
+        color: red;
+      }
+      /* here class has more specificity so it overrides the div css*/
+      .header h1 {
+        color: green;
+      }
+      .header > h1 {
+        color: red;
+      }
+
+      /*
+      ::first-letter , ::first-line these are used for paragraph element , we can apply first letter and first line 
+      */
+      p::first-letter {
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      p::first-line {
+        color: blueviolet;
+      }
+      a:link {
+        color: green;
+        margin: 20px 30px;
+        font-size: 1.5rem;
+      }
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: orangered;
+      }
+      a:hover {
+        color: red;
+      }
+      /*
+      :root
+      this is root selectors means root element of document is html , so we can apply stryles for root element by using this , default font size is 16px , we can change here by using this
+      :root{
+        font-size:20px; 
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <h1>1) Descendent and child combinators</h1>
+
+    <div class="header">
+      <h1>This is direct child</h1>
+    </div>
+    <div class="header">
+      <ul>
+        <li><h1>iam grand child</h1></li>
+      </ul>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+        voluptatem officia. Quas voluptatem consequuntur reiciendis numquam
+        delectus modi harum voluptas aliquam. Est necessitatibus ipsam voluptas
+        reiciendis voluptatum dolor dolores aliquam, ducimus distinctio hic
+        fugit! Soluta quam hic molestiae sit dolores, iusto doloremque dolor
+        explicabo alias. Deserunt animi a expedita architecto.
+      </p>
+    </div>
+    <h1>2):hover, :link,:active,:visited</h1>
+    <div class="links">
+      <a href="https://www.google.com/">Google</a>
+      <a href="https://www.facebook.com/">Fb</a>
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+    </div>
+  </body>
+</html>

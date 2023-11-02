@@ -1,0 +1,178 @@
+CSS GRID: 
+=========== 
+
+=> flex box not bad
+=> 2 -dimensional system means same as bootstrap grid system 
+=> browser support 95 %(caniuse.com) 
+=> browser prefixes same as Flex-box
+
+
+Rule1 :
+
+=> for use grid we have parent element in that we have children elements
+
+2 important properties:
+
+1)display:grid => this give grid functionality to that parent element
+
+2) grid-template-columns : 200px 200px 200px ...=> we can give child elements to width 
+
+Grid - implicit
+===============
+
+when we use grid-template-columns it will take automatically column layout based on which we given column  here we are not giving rows but it adjusting automatically 
+
+so this is grid smartness
+
+
+units => fr, auto
+=================
+
+this is same for column and rows 
+
+grid-template-columns : auto 200px 200px
+
+fr and auto will give responsive for devices 
+
+fr is used mostly for all so very important 
+
+don't use percentage and pixels because scroll will come responsive will failed
+
+so we have to use fr (fraction of availability space)
+
+grid-template-columns : 1fr 1fr 1fr
+
+
+Grid - rows:
+=============
+
+grid-template-rows: 200px 300px ..
+
+it is also same like column but it will apply for rows 
+
+Gap:
+=====
+
+This is important property , if you want give space between rows and column or elements in flex box we are given justly content align properties used
+but in this grid system very easy 
+
+old syntax:
+
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; 
+  short-cut: row column
+  grid-gap:20px 30px;
+
+new syntax:
+
+ grid-gap:20px 30px; 
+  row-gap: 10px;
+  column-gap: 20px; 
+  gap:20px 30px;
+
+grid -lines :
+=============
+
+we have to give individual child 
+
+these are important , to combined or extend column s or rows 
+
+grid column and rows are starts 1 to n number 
+
+based on this numbers we can extend column or row 
+
+grid-column-start:1 
+grid-column-start:3
+
+means column extended to 3 column same like row also
+grid-row-start:1 
+grid-row-start:3
+
+shortcut:
+grid-column: 1/3;
+grid-row:1/3
+
+grid Area:
+===========
+
+=> create columns and rows required using 1fr 
+
+=> give grid-template-area:
+""
+""
+"";
+here visualize the box column and rows and give the names 
+grid-template-areas:
+  "a a b"
+  "a a b"
+  "c c b"
+  "d d d"
+  "e f f"
+  ;
+
+  => now give individual cell to grid-area names 
+
+  .cell-1{
+  grid-area: a;
+}
+.cell-2{
+  grid-area: b;
+}
+
+this is easy way to create grit layouts 
+
+
+order:
+======
+same as flex box if we want move or keep one cell to last or middle give order property to that cell
+
+order:1
+
+
+repeat():
+=========
+
+it is very useful to create grid-template-column and rows if there many cells we cant give number of times 
+
+so in this time we are going to repeat(how many times repeat, units)
+
+ex: grid-template-column :repeat(4,1fr);
+
+
+justify-content: same as flexbox 
+it doesnt work when use fr because it takes 100%
+
+align-content :
+same as flexbox
+
+align-items, justify-items = => content within items 
+
+align-self , justify-self ==> single item content 
+
+
+minmax():
+========
+minmax(minimum length , units )
+
+minmax(500px , 1fr);
+
+when devices change the cells width will shrink if we give min width it wont shrink
+
+auto-fill and auto-fit:
+=======================
+
+when we create cell dynamically how many cells use we dont know 
+
+that time we have to use this 
+
+auto-fill==> keeps create means all cells will create upto within page
+
+auto-fit => only specified width will take 
+
+grid-template-column: repeat(auto-fit,minmax(200px,1fr));
+
+grid-template-column: repeat(auto-fill,minmax(200px,1fr));
+
+
+
+

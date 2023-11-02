@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables , text-box shadow , semantic tags , Emmit</title>
+    <style>
+      /*
+CSS variables are used to decrease the css code writing means if we write once  at one place and use any where many times so this is reusability the code 
+simply hold a value and reuse
+
+Syntax:
+
+create : --varName : value
+
+use: property: var(--varName)
+
+this can create in two ways 
+scope
+1)global scope==> :root{
+}
+this varables can use anywhere in application
+
+2)Local scope 
+
+element{
+}
+this can use for within that elements
+
+Text Shadow and Box shadow::after
+syntax : text-shadow : x-axis y-axis blur color
+          box-shadow : x-axis y-axis blur color
+
+          we can generate it from browser resources directly we can use from them , just type text shadow generator in google and goto website and we can do same box shadow also we can do
+          Browser Prefixes:
+          ===================
+          some times all css styles not sport so some browsers so we can check this from website "caniuse"
+          so we overcome this we can give extra css --webkit-- like that this can automatically generate from some resources
+          go to autoprefixer website and when we give our css properties it will generate browser prefixes and copy and we can use to our app
+
+          semantic tags
+          =============
+
+          this are used to code readbilty 
+
+          HTML EMMITS
+          ==========
+
+          these are shortcut way of write html code in VS code 
+          these is used to fast writing code 
+
+          create class with any element=> p.className
+          create multiple class with any element=> p.className.classname
+          create id with any element=> p#idName
+
+          create class or id with any div=> .className or #idName
+          create list elements in div => div>ul>li
+
+          create element with text => p{some text}
+          create list tags with text => ui>li*6{$}
+
+
+*/
+      :root {
+        --primaryColor: green;
+        --mainTransition: all 0.4s linear;
+        --secondaryColor: red;
+      }
+      .heading {
+        color: var(--primaryColor);
+      }
+      .heading:hover {
+        color: var(--secondaryColor);
+        transition: var(--mainTransition);
+      }
+      .text {
+        color: var(--primaryColor);
+      }
+      .mainHeading {
+        color: var(--primaryColor);
+      }
+
+      .mainDiv {
+        --mainColor: brown;
+      }
+      .mainText {
+        color: var(--mainColor);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1)Variables</h1>
+
+    <h2 class="heading">This is heading</h2>
+    <p class="text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+      aspernatur hic commodi explicabo ipsum fuga assumenda voluptate quas
+      voluptates alias.
+    </p>
+    <div class="mainDiv">
+      <h2 class="mainHeading">This is main heading</h2>
+      <p class="mainText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        laboriosam qui exercitationem earum fuga reprehenderit dolores
+        blanditiis repellat architecto nemo!
+      </p>
+    </div>
+  </body>
+</html>

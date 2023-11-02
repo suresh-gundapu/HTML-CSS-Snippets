@@ -84,3 +84,10 @@ the position relative is depends on besides element it wil take top and right di
 the absolute is taking distance from his root parent element html so it will cross the besides elements to over come this we can give position relative to its parent element
 then it will take distance from their parent div 
 
+z-index:
+=========
+
+position:static not working 
+
+
+higher number then come top lower number go bottom

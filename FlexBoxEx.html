@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Example</title>
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* align-items: baseline; */
+      }
+      .container2 {
+        border: 2px solid red;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .container3 {
+        border: 2px solid red;
+        /* height: 65px;
+        height: 65vh; */
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Box Example -row</h1>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+    <h1>Flex Box Example -column</h1>
+    <div class="container2">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+
+    <h1>4 -column layout creation</h1>
+    <div class="container3">
+      <div class="box1 box-1">1</div>
+      <div class="box1 box-2">2</div>
+      <div class="box1 box-3">3</div>
+      <div class="box1 box-4">4</div>
+    </div>
+  </body>
+</html>
