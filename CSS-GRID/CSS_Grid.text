@@ -6,9 +6,7 @@ CSS GRID:
 => browser support 95 %(caniuse.com) 
 => browser prefixes same as Flex-box
 
-
 Rule1 :
-
 => for use grid we have parent element in that we have children elements
 
 2 important properties:
