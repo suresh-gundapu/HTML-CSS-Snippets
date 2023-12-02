@@ -1,0 +1,15 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main{
+  min-height: 100vh;
+}
+.content{
+  font-size: 1.5rem;
+  background-color: aqua;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid red;
+  margin:0.2rem;
+}
