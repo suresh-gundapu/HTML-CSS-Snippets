@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixels, percentage , em , rem , vw , vh</title>
+    <title>Units: Pixels, percentage , em , rem , vw , vh</title>
     <style>
-      /* pixels is nothing but it visualize the dot 
+      /* 
+      Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+For some CSS properties, negative lengths are allowed.
+
+There are two types of length units: absolute and relative.
+1)absolute units:
+---------------------------
+      pixels
+      pixels is nothing but it visualize the dot 
       these are not relative means it not depend to others*/
       .heading {
         font-size: 40px;
       }
-      /* Percentage - Relatives : percentage  is always  depends on their relatives means their parent element has 100 percentage width if we give fifty percentage to child it will take in 100 percentage width of 50 percentage
+      /*
+2) Relative units:
+-----------------
+      Percentage - Relatives : percentage  is always  depends on their relatives means their parent element has 100 percentage width if we give fifty percentage to child it will take in 100 percentage width of 50 percentage
       for example if give two div's outer is parent and inner is child first if you apply width height color to inner div without apply css to outer div it wont apply because inner 
       div depends on outer div because outer div is parent of inner div
       if parent div has percentage size it wont apply
