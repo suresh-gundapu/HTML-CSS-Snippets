@@ -1,0 +1,77 @@
+<!-- 
+
+  For large application means complex projects we need to maintain css code readable and organized manner and maintainable
+  for this we are going to use BEM
+
+  B --- block :
+
+It is main object of your website , means header , content , menu , sidebar , footer
+.content {/* Styles */}
+.menu {/* Styles */}
+.search {/* Styles */}
+
+
+  E ----Element:
+
+  Element means it contain within the block only , that block performs a particular function 
+  
+  example in header logo element and form element 
+
+  content__article {/* Styles */}
+.menu__item {/* Styles */}
+.search__input {/* Styles */}
+
+-> it should write double underscore with block name 
+
+  M ----Modifier:
+
+A modifier is how we represent the variation of block ,means if button is there we want apply size variation 
+Modifier which adds additional styles to a specific element(s).
+
+
+.content__article-featured {/* Styles */}
+.menu__item--link {/* Styles */}
+.search__input--icon {/* Styles */}
+
+-> it should write with double double hypehn or single underscore 
+
+-> There is only one very critical rule in BEM methodology - a modifier cannot be used outside of the context of its owner.
+
+<div class=”btn btn_big”>...</div>
+
+Rules:
+---------
+Names are written in lowercase
+Words within the names of BEM entities are separated by a hyphen -
+An element name is separated from a block name by a double underscore __
+Boolean modifiers are delimited by double hyphens --
+Key-value type modifiers are not used
+
+ -->
+<style>
+  .head {
+    height: 5em;
+
+    &__eye {
+      height: 0.5em;
+    }
+
+    &--small {
+      height: 80%;
+
+      .head__eye {
+        height: 0.4em;
+      }
+    }
+  }
+</style>
+
+<div class="head head--small">
+  <div class="head__eye">(o)</div>
+  <div class="head__eye">(o)</div>
+</div>
+
+<div class="head">
+  <div class="head__eye head__eye--left">(o)</div>
+  <div class="head__eye head__eye--right">(o)</div>
+</div>

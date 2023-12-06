@@ -1,0 +1,58 @@
+<!-- 
+  Web storages:
+  ============
+these are used to store data locally within user's browser , for user track or temporary storage access
+Before HTML5, the data storage used by cookie in every server request it has drawbacks we can store only limited data only and 
+text data only can store and not secure
+by using web storages we can store large amount of data can store locally , without web performance issues 
+
+it can store per one origin (domain and proto cal) and can access in all pages same data
+
+
+we have two methods 
+
+1) local storage :
+==================
+
+=> no expiration time means if you close tab or browser data wont delete 
+=> and will be available the next day, week, or year.
+
+
+syntax :
+=======
+for setting:
+
+localStorage.setItem("key","value");
+to get:
+localStorage.getItem("key");
+
+single item :
+
+localStorage.key_name = "value";
+
+localStorage.key_name;
+
+remove localStorage :
+
+localStorage.removeItem(key_name);
+
+
+2) session storages :
+====================
+=> it is also same as local  storage
+
+=> It store data temporary or one session  means when u close tab or browser it deletes the data
+
+
+sessionStorage.setItem("key","value");
+to get:
+sessionStorage.getItem("key");
+Before using web storage, check browser support for localStorage and sessionStorage:
+
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+}
+  
+ -->
