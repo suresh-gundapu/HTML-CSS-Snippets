@@ -1,0 +1,45 @@
+<!-- 
+  The box model describes web page design and layout , every html element wraps box model
+
+  it consist of content , padding , border margin 
+
+  Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+Total element width = width + left padding + right padding + left border + right border
+
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border
+
+
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 320px;
+        height: 50px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Calculate the total width:</h2>
+
+    <img src="klematis4_big.jpg" width="350" height="263" alt="Klematis" />
+    <div>
+      The picture above is 350px wide. The total width of this element is also
+      350px. The total height of this element is 80px.
+    </div>
+  </body>
+</html>
