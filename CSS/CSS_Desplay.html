@@ -1,0 +1,105 @@
+<!-- 
+  CSS Display:
+  ==========
+This property used to specify how element should be display 
+
+Every element has default display property block or inline 
+
+display:inline vs block inline-block:
+====================================
+display: inline
+==============
+it occupies width and hight depends on element's content 
+
+not respected to top and bottom and margin
+
+it not allows width and hight on element 
+display: block
+==============
+it is occupies full width , and line breaks after element 
+
+it allows width and hight on element 
+
+
+ display: inline-block
+============== 
+same as inline but difference is 
+it respected to width and height on element 
+it  respected to top and bottom and margin
+
+
+display:none vs display:hidden:
+------------------------------
+
+display : none used to remove element and space of element 
+
+visibility : hidden used to remove element but keep element space as it is 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+  </head>
+  <style>
+    span.a {
+      display: inline;
+      border: 1px red solid;
+      text-align: center;
+      text-transform: capitalize;
+      color: black;
+      background-color: aquamarine;
+      height: 3rem;
+      width: 2rem;
+    }
+    span.b {
+      display: inline-block;
+
+      border: 1px red solid;
+      text-align: center;
+      text-transform: capitalize;
+      color: black;
+      background-color: aquamarine;
+      padding: 1rem;
+      width: 2rem;
+      height: 3rem;
+    }
+    span.c {
+      display: block;
+      border: 1px red solid;
+      text-align: center;
+      text-transform: capitalize;
+      color: black;
+      background-color: aquamarine;
+      padding: 1rem;
+      width: 2rem;
+      height: 3rem;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit <span class="a">Hi</span>
+      <span class="a">Hello</span> amet consectetur adipisicing elit. Id quo
+      perspiciatis dolor sint delectus fugiat, quis obcaecati totam quae
+      consectetur omnis nulla repudiandae ipsa. Amet nisi itaque obcaecati rem
+      ullam!
+    </p>
+    <p>
+      Lorem ipsum dolor sit <span class="b">Hi</span>
+      <span class="b">Hello</span> amet consectetur adipisicing elit. Id quo
+      perspiciatis dolor sint delectus fugiat, quis obcaecati totam quae
+      consectetur omnis nulla repudiandae ipsa. Amet nisi itaque obcaecati rem
+      ullam!
+    </p>
+    <p>
+      Lorem ipsum dolor sit <span class="c">Hi</span>
+      <span class="c">Hello</span> amet consectetur adipisicing elit. Id quo
+      perspiciatis dolor sint delectus fugiat, quis obcaecati totam quae
+      consectetur omnis nulla repudiandae ipsa. Amet nisi itaque obcaecati rem
+      ullam!
+    </p>
+  </body>
+</html>

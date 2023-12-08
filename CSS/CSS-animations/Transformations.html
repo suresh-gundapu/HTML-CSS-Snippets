@@ -1,0 +1,43 @@
+<!-- 
+  Transformations:
+  =============
+  this are used to display elements visually
+move, rotate,scale, skew elements
+  1) translate
+its move x axis and y axis from current position
+div{
+  transform: translate(50px,20px);
+}
+  2) rotate 
+  transform :rotate(150deg)
+
+  rotate specified degrees
+  3) scale
+  zoom the element means increase or decrease size 
+
+  scale(x,y);
+  4) skew :
+stretching the size
+
+skew(20deg,50deg);
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformations</title>
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+
+        transform: translate(150px, 80px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

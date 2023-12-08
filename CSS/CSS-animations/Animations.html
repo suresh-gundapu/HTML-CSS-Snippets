@@ -1,0 +1,75 @@
+<!-- 
+Animations:
+==========
+a group of transition effects is called animations
+
+An animation lets an element gradually change from one style to another.
+
+You can change as many CSS properties you want, as many times as you want.
+
+
+To use CSS animation, you must first specify some keyframes for the animation.
+
+Keyframes hold what styles the element will have at certain times
+div{
+  property:value;
+  animation : animation-name duration
+}
+@keyframes animation-name{
+  0%{property:value}
+    25%{property:value}
+  50%{property:value}
+  75%{property:value}
+  100%{property:value
+}
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        animation: suresh 2s;
+      }
+
+      @keyframes suresh {
+        0% {
+          background-color: blue;
+          top: 0px;
+          left: 5rem;
+        }
+        25% {
+          background-color: red;
+          top: 5rem;
+          right: 5rem;
+        }
+        50% {
+          background-color: green;
+          top: 2rem;
+          left: 5rem;
+        }
+        75% {
+          background-color: yellow;
+          top: 10rem;
+          left: 25rem;
+        }
+        100% {
+          background-color: orangered;
+          top: 50rem;
+          left: 55rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

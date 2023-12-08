@@ -1,0 +1,80 @@
+<!-- 
+Transitions:
+============
+
+These are used to css property values gradually changed based on specified number of seconds  
+
+its works on color and width height property
+
+it works when hover or click the any element it will apply effect based on duration of time  
+
+syntax:
+======
+
+div{
+
+  width:100px;
+  transition:width 1s;
+}
+
+div:hover{
+
+  width:100px; 
+}
+
+following properties
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values:
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+
+Transition + Transformation
+div {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        transition: width 2s, height 1s, background-color 1s;
+      }
+      .container:hover {
+        width: 500px;
+        height: 500px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

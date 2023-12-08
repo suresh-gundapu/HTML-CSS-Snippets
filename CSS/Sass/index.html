@@ -5,7 +5,7 @@ it is used to available or support to all version css
 
 it is css pre process
 
-it is used to maintain styles very easily and rediblity and modularity , reusebelity 
+it is used to maintain styles very easily and rediblity and modularity , reusability 
 
   SASS -- css
 
@@ -18,16 +18,37 @@ if we use VS CODE just search live sass server in extention
 when we create .css file for style sheet it create another scss file , we should include our css file to html and write in scss , css file compiles and gives
 browser understand code
 
+install with NPM steps:
+
+1) install nodejs and npm in your machine
+
+2) create package.json file in your project 
+
+npm init
+
+3)install sass
+npm install node-sass --save
+4)now open package.json 
+
+Remove the “test” script and add your own script of name compile: sass(any other name can be chosen), give the link of your sass file as a target.
+
+  "scripts": {
+        "compile:sass": "node-sass scss/style.scss css/style.css"
+    },
+
+    5) npm rum compile:sass
+
+
 mainly 4 concept:
 ================
 
 1)Variables:
-it is used to resusebility 
+it is used to reusability
 it start with dollar symbol
 2)Nested variables
  in css we have parant and child elements , we can apply css is complex but here we can apply very easy in example we will see 
 3)mixins and Parameters:
-this is also code reusebilty 
+this is also code reusability 
 @mixin var_name{
   property : value
 }
