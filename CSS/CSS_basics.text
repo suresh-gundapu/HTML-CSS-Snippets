@@ -78,14 +78,23 @@ positions:
 the default position is static 
 
 position absolute vs relative:
+-------------------------------
 
 the position relative is depends on besides element it wil take top and right distance so it is taking it's besides elements
 
 the absolute is taking distance from his root parent element html so it will cross the besides elements to over come this we can give position relative to its parent element
 then it will take distance from their parent div 
 
+Fixed
+: same as absolute , when we scroll webpage fixed element will not be scrolled,
+appears in fixed position
+
 z-index:
 =========
+The z-index property specifies the stack order of an element within the document area (or a
+part of it). An element with greater stack order will always be in front of an element with a
+lower stack order. However, z-index only works on positioned elements (position:absolute,
+position:relative, or position:fixed).
 
 position:static not working 
 

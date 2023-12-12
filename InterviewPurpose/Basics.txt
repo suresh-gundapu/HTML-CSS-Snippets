@@ -1,0 +1,113 @@
+Optimize Website loading:
+==========================
+
+1)enable browser caching
+2)optimize images and compression
+3)minify resources
+4) reduce redirects
+5) minimize http requests 
+6) JS and CSS files should be external
+7)CSS and JavaScript files should be loaded asynchronously
+
+Optimize website assets:
+=======================
+1) file concantenation
+2) file compression 
+3) CDN hosting 
+4) offline assets
+5) refine code 
+
+HTML5 New Features:
+===================
+<!DOCTYPE html>
+1) API support
+History API: Provides programs with access to the browser's history.
+Page visibility API: Enables us to determine the current visibility state of a
+page.
+Battery Status API: Displays the current battery status of the device.
+User Timing API: Provides programmers with high-precision timestamps for
+measuring application performance.
+Vibration API: Provides access to the device's vibration functionality.
+
+2) muliti media  support
+<audio>: Used to embed audio files in a web page
+<video>: Used to embed video files in a web page.
+<source>: Used for attaching multimedia files, including audio, video, and
+photos.
+<embed>: Used to embed external applications, usually multimedia content
+such as audio or video into an HTML document.
+<track>: Specifies text tracks for audio and video components.
+3) Graphics support 
+4) JS support
+5) Offline data support 
+6) new input types
+color, date, date-time, month, email, week 
+
+7) new attributes
+
+8) new form elements 
+<datalist>,<keygen>,<progress>,<meter>,<output>
+
+
+HTML5 Semantic Tags :
+=====================
+
+Engine Optimization.
+Semantic elements = elements with a meaning.
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+New Semantic Elements
+Semantic elements : header, nav, section, article, aside, and footer
+Form controls
+: calendar, date, time, email, url and search
+Media tags
+: audio, video, and canvas
+
+Data attributes:
+==================
+
+Data attributes used to store custom data directly inside html tags so they are easily
+accessible from the css and js
+
+CSS3 Features:
+==============
+-> javascript and mobile development 
+-> transition, tranformation, animations
+->text-shadow, box-shadow
+-> border-radius
+->gradient colors
+-> text-overflow
+->resize
+->text-column
+
+CSS preprocessors:
+===============
+
+=> these are a tool used to write css code organized and more structured manner
+
+=> CSS preprocessors convert code written in a preprocessed language like SASS or LESS into the
+same old CSS we’ve been using for such a long time now. The main advantages of using
+preprocessors are:
+
+=> Variables 
+
+=> nesting==reusabel varaibles 
+
+=> create and use mixins(functions)
+
+=> mathemetical operational functions
+
+Short hand properties :
+=======================
+
+=> these are used to write property in one line not applicable to all css properties but apply some css properties
+border,margin,padding,outline,back-ground
+=>Short- hand properties reduce file size thus improving page
+load time
+
+
+
+
+
+

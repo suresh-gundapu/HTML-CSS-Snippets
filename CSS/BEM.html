@@ -64,6 +64,34 @@ Key-value type modifiers are not used
       }
     }
   }
+  /*New example */
+  .composition {
+    position: relative;
+    &__photo {
+      width: 56%;
+      position: absolute;
+      border: 5px solid black;
+      height: 200px;
+      &--p1 {
+        left: 0;
+        top: 0;
+      }
+      &--p2 {
+        right: 0;
+        top: 2rem;
+      }
+      &--p3 {
+        left: 20%;
+        top: 10rem;
+      }
+      &:hover {
+        transform: scale(1.05) translateY(-0.5rem);
+      }
+    }
+    &:hover &__photo:not(:hover) {
+      transform: scale(0.95);
+    }
+  }
 </style>
 
 <div class="head head--small">
@@ -74,4 +102,12 @@ Key-value type modifiers are not used
 <div class="head">
   <div class="head__eye head__eye--left">(o)</div>
   <div class="head__eye head__eye--right">(o)</div>
+</div>
+
+<!--New Example -->
+<element class="block__element--modifier"></element>
+<div class="composition">
+  <img class="composition__photo composition__photo--p1" />
+  <img class="composition__photo composition__photo--p2" />
+  <img class="composition__photo composition__photo--p3" />
 </div>

@@ -6,6 +6,13 @@ CSS GRID:
 => browser support 95 %(caniuse.com) 
 => browser prefixes same as Flex-box
 
+=> Grid systems are structured rules that enable content to be stacked horizontally and vertically
+in a consistent and sustainable way. They find heavily usage in today’s websites because they
+offer increased productivity while coding, they’re versatile and ideal for responsive layouts
+
+=>The grid system is responsive, and the columns will re-arrange automatically depending on
+the screen size.
+
 Rule1 :
 => for use grid we have parent element in that we have children elements
 

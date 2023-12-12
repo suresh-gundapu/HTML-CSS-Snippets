@@ -17,6 +17,21 @@ we have two methods
 => no expiration time means if you close tab or browser data wont delete 
 => and will be available the next day, week, or year.
 
+=> Local storage has
+a storage capacity
+of 5MB/10MB.
+
+=>The client can
+only access local
+storage. It is
+impossible for a
+server to use local
+storage unless it
+deliberately
+makes a request
+to the server via
+GET or POST.
+
 
 syntax :
 =======
@@ -55,4 +70,30 @@ if (typeof(Storage) !== "undefined") {
   // Sorry! No Web Storage support..
 }
   
+
+3) Cookies:
+============
+
+Simply put, a cookie is a small text file
+containing information about a
+website, like a username or a password.
+When you visit a particular website, this
+website saves some information in your
+local system so that it can recognize
+you and display results according to
+your preferences.
+
+=>Servers and clients are both able to
+read and write cookies.
+
+
+=>Cookies have a storage capacity of 4KB.
+
+
+=>  Cookies have an expiration date and
+cookie data is purged a er a certain
+period of time.
+
+
+
  -->
